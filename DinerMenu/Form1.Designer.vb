@@ -27,6 +27,9 @@ Partial Class Form1
         SaladButton = New Button()
         FishButton = New Button()
         ExitButton = New Button()
+        GroupBox1 = New GroupBox()
+        Label1 = New Label()
+        GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
         ' DinerNameLabel
@@ -74,11 +77,31 @@ Partial Class Form1
         ExitButton.Text = "Exit"
         ExitButton.UseVisualStyleBackColor = True
         ' 
+        ' GroupBox1
+        ' 
+        GroupBox1.Controls.Add(Label1)
+        GroupBox1.Location = New Point(34, 84)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Size = New Size(300, 150)
+        GroupBox1.TabIndex = 5
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "GroupBox1"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(42, 37)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(63, 25)
+        Label1.TabIndex = 0
+        Label1.Text = "Label1"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(GroupBox1)
         Controls.Add(ExitButton)
         Controls.Add(FishButton)
         Controls.Add(SaladButton)
@@ -86,6 +109,8 @@ Partial Class Form1
         Controls.Add(DinerNameLabel)
         Name = "Form1"
         Text = "Form1"
+        GroupBox1.ResumeLayout(False)
+        GroupBox1.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -95,5 +120,7 @@ Partial Class Form1
     Friend WithEvents SaladButton As Button
     Friend WithEvents FishButton As Button
     Friend WithEvents ExitButton As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label1 As Label
 
 End Class
