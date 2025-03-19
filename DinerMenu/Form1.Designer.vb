@@ -34,10 +34,10 @@ Partial Class Form1
         ' 
         ' DinerNameLabel
         ' 
-        DinerNameLabel.AutoSize = True
+        DinerNameLabel.Font = New Font("BankGothic Md BT", 20F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         DinerNameLabel.Location = New Point(12, 9)
         DinerNameLabel.Name = "DinerNameLabel"
-        DinerNameLabel.Size = New Size(151, 25)
+        DinerNameLabel.Size = New Size(615, 54)
         DinerNameLabel.TabIndex = 0
         DinerNameLabel.Text = "The Salty Spitoon"
         ' 
@@ -83,6 +83,7 @@ Partial Class Form1
         FoodLabel.Name = "FoodLabel"
         FoodLabel.Size = New Size(609, 224)
         FoodLabel.TabIndex = 0
+        FoodLabel.TextAlign = ContentAlignment.TopCenter
         ' 
         ' GroupBox1
         ' 
@@ -109,7 +110,6 @@ Partial Class Form1
         Text = "Form1"
         GroupBox1.ResumeLayout(False)
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents DinerNameLabel As Label
