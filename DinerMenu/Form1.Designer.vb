@@ -43,7 +43,7 @@ Partial Class Form1
         ' 
         ' SoupButton
         ' 
-        SoupButton.Location = New Point(12, 395)
+        SoupButton.Location = New Point(34, 395)
         SoupButton.Name = "SoupButton"
         SoupButton.Size = New Size(112, 34)
         SoupButton.TabIndex = 1
@@ -52,7 +52,7 @@ Partial Class Form1
         ' 
         ' SaladButton
         ' 
-        SaladButton.Location = New Point(192, 399)
+        SaladButton.Location = New Point(152, 395)
         SaladButton.Name = "SaladButton"
         SaladButton.Size = New Size(112, 34)
         SaladButton.TabIndex = 2
@@ -61,7 +61,7 @@ Partial Class Form1
         ' 
         ' FishButton
         ' 
-        FishButton.Location = New Point(340, 395)
+        FishButton.Location = New Point(270, 395)
         FishButton.Name = "FishButton"
         FishButton.Size = New Size(112, 34)
         FishButton.TabIndex = 3
@@ -79,6 +79,7 @@ Partial Class Form1
         ' 
         ' FoodLabel
         ' 
+        FoodLabel.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         FoodLabel.Location = New Point(42, 37)
         FoodLabel.Name = "FoodLabel"
         FoodLabel.Size = New Size(609, 224)
