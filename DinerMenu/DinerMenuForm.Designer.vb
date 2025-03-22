@@ -51,6 +51,7 @@ Partial Class DinerMenuForm
         SoupButton.Size = New Size(185, 57)
         SoupButton.TabIndex = 1
         SoupButton.Text = "Soup of the Day"
+        ToolTip1.SetToolTip(SoupButton, "This button hides the secrets of today's soup...")
         SoupButton.UseVisualStyleBackColor = True
         ' 
         ' SaladButton
@@ -60,6 +61,7 @@ Partial Class DinerMenuForm
         SaladButton.Size = New Size(132, 57)
         SaladButton.TabIndex = 2
         SaladButton.Text = "Chef's Special"
+        ToolTip1.SetToolTip(SaladButton, "Lovingly curated food for you eating experience")
         SaladButton.UseVisualStyleBackColor = True
         ' 
         ' FishButton
@@ -69,6 +71,7 @@ Partial Class DinerMenuForm
         FishButton.Size = New Size(112, 57)
         FishButton.TabIndex = 3
         FishButton.Text = "Daily Fish"
+        ToolTip1.SetToolTip(FishButton, "Fish...")
         FishButton.UseVisualStyleBackColor = True
         ' 
         ' ExitButton
@@ -78,6 +81,7 @@ Partial Class DinerMenuForm
         ExitButton.Size = New Size(112, 54)
         ExitButton.TabIndex = 4
         ExitButton.Text = "Exit"
+        ToolTip1.SetToolTip(ExitButton, "Closes the program")
         ExitButton.UseVisualStyleBackColor = True
         ' 
         ' FoodLabel
@@ -98,7 +102,7 @@ Partial Class DinerMenuForm
         InfoGroupBox.TabIndex = 5
         InfoGroupBox.TabStop = False
         ' 
-        ' Form1
+        ' DinerMenuForm
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
@@ -109,7 +113,7 @@ Partial Class DinerMenuForm
         Controls.Add(SaladButton)
         Controls.Add(SoupButton)
         Controls.Add(DinerNameLabel)
-        Name = "Form1"
+        Name = "DinerMenuForm"
         Text = "Form1"
         InfoGroupBox.ResumeLayout(False)
         ResumeLayout(False)
