@@ -1,10 +1,14 @@
-﻿Option Strict On
+﻿'Jacob Horsley
+'RCET 0265
+'Spring 2025
+'Diner Menu Program
+'URL: 
+
+Option Strict On
 Option Explicit On
 
-Public Class Form1
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles DinerNameLabel.Click
+Public Class DinerMenuForm
 
-    End Sub
 
     Private Sub SoupButton_Click(sender As Object, e As EventArgs) Handles SoupButton.Click
         FoodLabel.Text = "The Liquid Lunch" & vbCrLf & "The liquid lunch is a true man's way of putting" _

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class DinerMenuForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,14 +22,16 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         DinerNameLabel = New Label()
         SoupButton = New Button()
         SaladButton = New Button()
         FishButton = New Button()
         ExitButton = New Button()
         FoodLabel = New Label()
-        GroupBox1 = New GroupBox()
-        GroupBox1.SuspendLayout()
+        InfoGroupBox = New GroupBox()
+        ToolTip1 = New ToolTip(components)
+        InfoGroupBox.SuspendLayout()
         SuspendLayout()
         ' 
         ' DinerNameLabel
@@ -39,40 +41,41 @@ Partial Class Form1
         DinerNameLabel.Name = "DinerNameLabel"
         DinerNameLabel.Size = New Size(615, 54)
         DinerNameLabel.TabIndex = 0
-        DinerNameLabel.Text = "The Salty Spitoon"
+        DinerNameLabel.Text = "The Saltier Spitoon"
+        ToolTip1.SetToolTip(DinerNameLabel, "The Most legendary of restaurants this side of the ocean")
         ' 
         ' SoupButton
         ' 
-        SoupButton.Location = New Point(34, 395)
+        SoupButton.Location = New Point(34, 372)
         SoupButton.Name = "SoupButton"
-        SoupButton.Size = New Size(112, 34)
+        SoupButton.Size = New Size(185, 57)
         SoupButton.TabIndex = 1
-        SoupButton.Text = "Soup"
+        SoupButton.Text = "Soup of the Day"
         SoupButton.UseVisualStyleBackColor = True
         ' 
         ' SaladButton
         ' 
-        SaladButton.Location = New Point(152, 395)
+        SaladButton.Location = New Point(225, 372)
         SaladButton.Name = "SaladButton"
-        SaladButton.Size = New Size(112, 34)
+        SaladButton.Size = New Size(132, 57)
         SaladButton.TabIndex = 2
-        SaladButton.Text = "Salad"
+        SaladButton.Text = "Chef's Special"
         SaladButton.UseVisualStyleBackColor = True
         ' 
         ' FishButton
         ' 
-        FishButton.Location = New Point(270, 395)
+        FishButton.Location = New Point(363, 372)
         FishButton.Name = "FishButton"
-        FishButton.Size = New Size(112, 34)
+        FishButton.Size = New Size(112, 57)
         FishButton.TabIndex = 3
-        FishButton.Text = "FishButton"
+        FishButton.Text = "Daily Fish"
         FishButton.UseVisualStyleBackColor = True
         ' 
         ' ExitButton
         ' 
-        ExitButton.Location = New Point(573, 411)
+        ExitButton.Location = New Point(676, 375)
         ExitButton.Name = "ExitButton"
-        ExitButton.Size = New Size(112, 34)
+        ExitButton.Size = New Size(112, 54)
         ExitButton.TabIndex = 4
         ExitButton.Text = "Exit"
         ExitButton.UseVisualStyleBackColor = True
@@ -86,22 +89,21 @@ Partial Class Form1
         FoodLabel.TabIndex = 0
         FoodLabel.TextAlign = ContentAlignment.TopCenter
         ' 
-        ' GroupBox1
+        ' InfoGroupBox
         ' 
-        GroupBox1.Controls.Add(FoodLabel)
-        GroupBox1.Location = New Point(34, 84)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(675, 285)
-        GroupBox1.TabIndex = 5
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "GroupBox1"
+        InfoGroupBox.Controls.Add(FoodLabel)
+        InfoGroupBox.Location = New Point(34, 84)
+        InfoGroupBox.Name = "InfoGroupBox"
+        InfoGroupBox.Size = New Size(754, 285)
+        InfoGroupBox.TabIndex = 5
+        InfoGroupBox.TabStop = False
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(GroupBox1)
+        Controls.Add(InfoGroupBox)
         Controls.Add(ExitButton)
         Controls.Add(FishButton)
         Controls.Add(SaladButton)
@@ -109,7 +111,7 @@ Partial Class Form1
         Controls.Add(DinerNameLabel)
         Name = "Form1"
         Text = "Form1"
-        GroupBox1.ResumeLayout(False)
+        InfoGroupBox.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -119,6 +121,7 @@ Partial Class Form1
     Friend WithEvents FishButton As Button
     Friend WithEvents ExitButton As Button
     Friend WithEvents FoodLabel As Label
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents InfoGroupBox As GroupBox
+    Friend WithEvents ToolTip1 As ToolTip
 
 End Class
